@@ -24,7 +24,6 @@ def slice_image(filepath):
         left.save(left_path)
         right.save(right_path)
 
-        # Update status without popup
         status_label.config(text="✅ Split saved!", fg="green")
         root.bell()  # <-- comment if you dont like sound i guess
 
@@ -55,3 +54,4 @@ label.drop_target_register(DND_FILES)
 label.dnd_bind('<<Drop>>', drop)
 
 root.mainloop()
+
